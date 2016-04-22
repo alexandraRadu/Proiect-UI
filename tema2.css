@@ -1,0 +1,22 @@
+#header{
+	border-bottom-style:inset;
+}
+
+#hasuratBackground{
+	 background-image: url("hasurat.jpg")	
+}
+
+#textBackground{
+	background-color:white;
+}
+
+#footerBackground {
+	background-color:#D3D3D3;
+	margin-top:270px;
+}
+
+@media (max-width: 768px) {
+ #footer{
+  display: none;
+}
+}

@@ -1,0 +1,87 @@
+body {
+	margin-left: 20%;
+    margin-right: 20%;
+  
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+
+
+li {
+    float: left;
+}
+
+
+li a {
+    display: block;
+    color: #979797;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li div {
+    float: right;
+}
+
+
+
+
+ul img {
+	column-count:3;
+	width: calc(99%/3)
+}
+
+
+ 
+#thing {
+    height: 40px;
+    background-image: linear-gradient(-45deg, black 10%, transparent 25%, transparent 50%, black 10%, black 10%, transparent 60%, transparent);
+    background-size: 4px 4px;
+	text-align:center;
+}
+ 
+ .coloane {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+#footerBackground{
+	background-color:#D3D3D3;
+	margin-padding:30px;
+	margin-bottom: 20px;
+	 
+}
+
+#hasuratBackground{
+	 background-image: url("hasurat.jpg")
+	
+}
+
+#textBackground{
+	background-color:white;
+}
+
+#resizeLogo{
+	height:100%;
+	width: 30%;
+}
+
+@media (max-width: 768px) {
+ #footer{
+  display: none;
+}
+}
+
+
+
+	

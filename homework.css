@@ -1,0 +1,21 @@
+body {
+	margin-left: 20%;
+    margin-right: 20%;
+    
+}
+
+ul {
+    background-color: #FFFFFF;
+	width: 30px;
+	height:30 px;
+}
+
+#3poze {
+	column-count:3;
+	width: calc(99%/3)
+}
+
+
+
+
+
