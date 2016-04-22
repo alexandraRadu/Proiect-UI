@@ -7,10 +7,22 @@
 	<script>
 		function validateForm() {
 			var x = document.forms["myForm"]["name"].value;
-				if (x == null || x == "") {
+			var y = document.forms["myForm"]["email"].value;
+			var z = document.forms["myForm"]["website"].value;
+			if (x == null || x == "") {
 				alert("Name must be filled out");
 				return false;
 			}
+			if (y == null || y == ""){
+				alert("Email must be filled out");
+				return false;
+			}
+			
+			if (z == null || z == "") {
+				alert("Website must be filled out");
+				return false;
+			}
+			
 		}
 	</script>
 	</head>
@@ -34,8 +46,8 @@
 		<div class = "row">
 			<form name="myForm" onsubmit="return validateForm()" method="post">
 			<div class="col-sm-4 col-xs-12"><input type="text" name="name" placeholder = "Name" style = "border-bottom-style:inset; border-top-style:outset; padding-bottom:10px; padding-top:10px; margin-top:10px;border-left-style:outset;border-right-style:inset;width:100%;"></div>
-			<div class="col-sm-4 col-xs-12"><input type="text" placeholder = "Email" style = "border-bottom-style:inset; border-top-style:outset; padding-bottom:10px; padding-top:10px; margin-top:10px;border-left-style:outset;border-right-style:inset;width:100%;"></div>
-			<div class="col-sm-4 col-xs-12"><input type="text" placeholder = "Website" style = "border-bottom-style:inset; border-top-style:outset; padding-bottom:10px; padding-top:10px; margin-top:10px;border-left-style:outset;border-right-style:inset;width:100%;"></div>
+			<div class="col-sm-4 col-xs-12"><input type="text" name="email" placeholder = "Email" style = "border-bottom-style:inset; border-top-style:outset; padding-bottom:10px; padding-top:10px; margin-top:10px;border-left-style:outset;border-right-style:inset;width:100%;"></div>
+			<div class="col-sm-4 col-xs-12"><input type="text" name="website" placeholder = "Website" style = "border-bottom-style:inset; border-top-style:outset; padding-bottom:10px; padding-top:10px; margin-top:10px;border-left-style:outset;border-right-style:inset;width:100%;"></div>
 			</form>
 		</div>
 		<div class = "row">
