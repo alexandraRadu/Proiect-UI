@@ -4,7 +4,16 @@
 	<title>Form</title>
 	<link rel="stylesheet" type="text/css" href="tema2.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-</head>
+	<script>
+		function validateForm() {
+			var x = document.forms["myForm"]["name"].value;
+				if (x == null || x == "") {
+				alert("Name must be filled out");
+				return false;
+			}
+		}
+	</script>
+	</head>
 <body style = "margin-left: 20%;margin-right: 20%;">
 	<center><img src="1_endava1.jpg" style="width:330px;height:330px; align = "middle" ></center>
 	<div class="container-fluid">
@@ -23,8 +32,8 @@
 			<div class="col-sm-4 col-xs-4"></div>
 		</div>
 		<div class = "row">
-			<form>
-			<div class="col-sm-4 col-xs-12"><input type="text" placeholder = "Name" style = "border-bottom-style:inset; border-top-style:outset; padding-bottom:10px; padding-top:10px; margin-top:10px;border-left-style:outset;border-right-style:inset;width:100%;"></div>
+			<form name="myForm" onsubmit="return validateForm()" method="post">
+			<div class="col-sm-4 col-xs-12"><input type="text" name="name" placeholder = "Name" style = "border-bottom-style:inset; border-top-style:outset; padding-bottom:10px; padding-top:10px; margin-top:10px;border-left-style:outset;border-right-style:inset;width:100%;"></div>
 			<div class="col-sm-4 col-xs-12"><input type="text" placeholder = "Email" style = "border-bottom-style:inset; border-top-style:outset; padding-bottom:10px; padding-top:10px; margin-top:10px;border-left-style:outset;border-right-style:inset;width:100%;"></div>
 			<div class="col-sm-4 col-xs-12"><input type="text" placeholder = "Website" style = "border-bottom-style:inset; border-top-style:outset; padding-bottom:10px; padding-top:10px; margin-top:10px;border-left-style:outset;border-right-style:inset;width:100%;"></div>
 			</form>
